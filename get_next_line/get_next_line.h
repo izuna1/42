@@ -19,7 +19,7 @@
 
 # define BUF_SIZE 8
 
-char	*str_append(const char *src, const char c);
+char	*str_append(char *src, const char c);
 size_t	str_cpytil(char **dest, const char *src, const char c);
 int		get_next_line(const int fd, char **line);
 
