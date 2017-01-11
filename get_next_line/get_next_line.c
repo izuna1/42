@@ -12,7 +12,7 @@
 
 #include "get_next_line.h"
 
-char				*str_append(const char *src, const char c)
+char				*str_append(char *src, const char c)
 {
 	char			*dst;
 	size_t			i;
@@ -27,6 +27,7 @@ char				*str_append(const char *src, const char c)
 	while (++i < len)
 		dst[i] = src[i];
 	dst[i] = c;
+	free(src);
 	return (dst);
 }
 
